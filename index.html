@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice Notes</title>
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Your HTML content -->
+    <!-- Main container for the app -->
     <div class="notes-container">
         <h1>Take Notes with Your Voice</h1>
+        
+        <!-- Instructions for using the app -->
         <ul class="instructions">
             <li>Speak and your words will appear below!</li>
             <li>Click on any note to edit or delete it.</li>
             <li>Click the 'Save' button to save your notes.</li>
         </ul>
+        
+        <!-- List to display notes -->
         <ol class="notes-list"></ol>
+        
+        <!-- Save button -->
         <button class="btn-save">Save</button>
+        
+        <!-- Clear all notes button -->
+        <button class="btn-clear">Clear All</button>
+        
+        <!-- Feedback section -->
+        <div class="feedback" id="feedback"></div>
+        
+        <!-- Loading indicator -->
+        <div class="loading" id="loading">Listening...</div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
